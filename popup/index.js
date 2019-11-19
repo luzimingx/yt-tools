@@ -18,7 +18,9 @@ var Index = {
         this.dom.confirmBtn.addEventListener('click', function() {
             chrome.storage.sync.set({
                 developerName: _this.dom.developerName.value
-            }, function() {});
+            }, function() {
+                window.close();
+            });
         });
     }
 };
