@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "yitang-tools",
+    "version": "0.1",
+    "description": "some tools for yitang",
+    "icons": {
+        "16": "static/img/icon.png",
+        "48": "static/img/icon.png",
+        "128": "static/img/icon.png"
+    },
+    "background": {
+        "scripts": ["background/index.js"]
+    },
+    "browser_action": {
+        "default_icon": "static/img/icon.png",
+        "default_title": "yitang-tools",
+        "default_popup": "popup/index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.dev.ethercap.com/*"],
+            "js": ["content/index.js"]
+        }
+    ],
+    "permissions": ["storage"],
+    "homepage_url": "https://yitang.ethercap.com/index"
+}
