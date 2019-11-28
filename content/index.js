@@ -43,7 +43,7 @@ var Tool = {
     },
     addTool: function() {
         var _this = this;
-        var developTol = this.createEl('div', { style: 'position: fixed;z-index: 99;top: 1rem;left: 0;border: 1px dotted #eee' });
+        var developTol = this.createEl('div', { style: 'position: fixed;z-index: 99;bottom: 2rem;left: 0;border: 1px dotted #eee' });
         // 切换模式
         var modeBtn = this.createEl('button', { class: "btn btn-sm btn-block" });
         this.getCurrentMode();
