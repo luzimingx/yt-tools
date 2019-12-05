@@ -16,6 +16,9 @@ var Tool = {
         name: '4000',
         url: '/promotion/financing-acc'
     }, {
+        name: '4000-36kr',
+        url: '/promotion/financing-acc-36kr'
+    }, {
         name: '4000占座',
         url: '/promotion/financing-acc-reserve'
     }],
