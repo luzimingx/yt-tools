@@ -78,8 +78,8 @@ var Tool = {
         developTol.addEventListener('touchstart', function(e) {
             positionStart = developTol.getBoundingClientRect();
             positionMax = {
-                x: window.screen.availWidth * 2 - positionStart.width,
-                y: window.screen.availHeight * 2 - positionStart.height,
+                x: document.documentElement.clientWidth - positionStart.width,
+                y: document.documentElement.clientHeight - positionStart.height,
             };
             mouseStart = {
                 x: e.targetTouches[0].pageX,
